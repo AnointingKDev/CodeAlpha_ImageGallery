@@ -27,7 +27,7 @@
   let lbIndex = 0;
   let filteredImages = [...images];
 
-  // ── RENDER ────────────────────────────────────────────────
+  // ── RENDER ────────────────
   const gallery    = document.getElementById('gallery');
   const emptyState = document.getElementById('emptyState');
 
