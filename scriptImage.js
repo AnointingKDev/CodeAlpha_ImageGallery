@@ -27,7 +27,7 @@
   let lbIndex = 0;
   let filteredImages = [...images];
 
-  // ── RENDER ────────────────
+  // ── RENDER ─────────
   const gallery    = document.getElementById('gallery');
   const emptyState = document.getElementById('emptyState');
 
@@ -80,7 +80,7 @@
     });
   }
 
-  // ── FILTERS ───────────────────────────────────────────────
+  
   document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -90,13 +90,13 @@
     });
   });
 
-  // ── SEARCH ────────────────────────────────────────────────
+  
   document.getElementById('searchInput').addEventListener('input', e => {
     searchQuery = e.target.value.toLowerCase().trim();
     render();
   });
 
-  // ── LIGHTBOX ──────────────────────────────────────────────
+  
   const lightbox = document.getElementById('lightbox');
   const lbImg    = document.getElementById('lb-img');
   const lbTitle  = document.getElementById('lb-title');
